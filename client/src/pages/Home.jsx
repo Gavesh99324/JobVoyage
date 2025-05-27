@@ -1,6 +1,6 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 function Home() {
   return (
@@ -8,7 +8,7 @@ function Home() {
       <Navbar />
       <Hero />
     </div>
-  )
+  );
 }
 
 export default Home;
