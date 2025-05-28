@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <Link to="/applications">Applied Jobs</Link>
             <span>|</span>
-            <span>Hi, {user.firstName + " " + user.lastName}</span>
+            <span className="max-sm:hidden">Hi, {user.firstName + " " + user.lastName}</span>
             <UserButton />
           </div>
         ) : (
