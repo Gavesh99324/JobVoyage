@@ -164,7 +164,7 @@ const JobListing = () => {
             ))}
         </div>
 
-        {jobs.length > 0 && (
+        {filteredJobs.length > 0 && (
           <div className="flex items-center justify-center space-x-2 mt-10">
             <a href="">
               <img
