@@ -2,19 +2,21 @@ import React from "react";
 import jobvoyage from "../assets/jobvoyage.jpg";
 import Button from "@mui/material/Button";
 import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { openSignIn } = useClerk();
   const { user } = useUser();
+  const navigate = useNavigate();
 
   return (
     <div className="shadow py-4">
       <div className="container px-4 2xl:px-20 mx-auto flex ml-8 items-center justify-between">
         <img
+          onClick={() => navigate("/")}
           src={jobvoyage}
           alt="logo"
-          className="w-[100px] ml-[30px] rounded-4xl"
+          className="w-[100px] ml-[30px] rounded-4xl cursor-pointer"
         />
         {user ? (
           <div className="flex items-center gap-3">
