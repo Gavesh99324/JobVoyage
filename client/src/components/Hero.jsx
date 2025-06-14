@@ -3,9 +3,9 @@ import { assets } from "../assets/assets";
 import { AppContext } from "../context/AppContext";
 
 function Hero() {
-  const { setSearchFilter, setIsSearched } = useContext(AppContext);
+  const { setSearchFilter, setIsSearched } = useContext(AppContext); // UseContext() is a React hook that lets you consume global data from a context provider, without needing to pass it down through props.
 
-  const titleRef = useRef(null);
+  const titleRef = useRef(null);  // useRef() is a React hook that lets you create mutable variables that persist across renders.
   const locationRef = useRef(null);
 
   const onSearch = () => {

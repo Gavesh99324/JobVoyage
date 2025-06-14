@@ -9,10 +9,9 @@ import {
 import JobCard from "./JobCard";
 
 const JobListing = () => {
-  const { isSearched, searchFilter, setSearchFilter, jobs } =
-    useContext(AppContext);
+  const { isSearched, searchFilter, setSearchFilter, jobs } = useContext(AppContext); // useContext() is a React hook that lets you consume global data from a context provider, without needing to pass it down through props.
 
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState(false); // useState() is a React hook that lets you add state to a functional component.
 
   const [currentPage, setCurrentPage] = useState(1);
 

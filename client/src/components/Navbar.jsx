@@ -5,9 +5,9 @@ import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const { openSignIn } = useClerk();
-  const { user } = useUser();
-  const navigate = useNavigate();
+  const { openSignIn } = useClerk(); // useClerk() is a React hook that lets you access the Clerk API from a functional component.
+  const { user } = useUser();  // useUser() is a React hook that lets you access user data from a functional component.
+  const navigate = useNavigate();  // useNavigate() is a React hook that lets you navigate programmatically from one route to another.
 
   return (
     <div className="shadow py-4">
